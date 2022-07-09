@@ -8,11 +8,11 @@ library(reshape2)
 
 
 
-companyA <- read_excel("C:/GAMS/266/sw_data.xlsx", sheet = "Company A")
+companyA <- read_excel("sw_data.xlsx", sheet = "Company A")
 
 
 
-companyB <- read_excel("C:/GAMS/266/sw_data.xlsx", sheet = "Company B")
+companyB <- read_excel("sw_data.xlsx", sheet = "Company B")
 
 
 companyA$row_sum <- rowSums(companyA[,c(3:5)])
