@@ -3,9 +3,9 @@ rm(list = ls(all.names = TRUE))
 library(readxl)
 
 
-companyA <- read_excel("C:/GAMS/266/sw_data.xlsx", sheet = "Company A")
+companyA <- read_excel("sw_data.xlsx", sheet = "Company A")
 
-companyB <- read_excel("C:/GAMS/266/sw_data.xlsx", sheet = "Company B")
+companyB <- read_excel("sw_data.xlsx", sheet = "Company B")
 
 
 companyA[,"Plastic Waste"] <- companyA$`total waste from plastic recycling bins` - companyA$`non-recyclable waste from plastic recycling bins`
